@@ -1,6 +1,8 @@
 <?php
-
+// operadores
+// https://www.php.net/manual/pt_BR/language.operators.arithmetic.php
 //01 - Construa um algoritmo que, tendo como dados de entrada dois pontos quaisquer no plano p(x1, y1) e P(x2, y2), escreva a distância entre eles.
+// https://www.php.net/manual/pt_BR/function.round.php
 
 function verificaDistancia($x1, $x2, $y1, $y2){
 	$distancia = NULL;
@@ -15,6 +17,7 @@ echo 'Exercício 01 - Construa um algoritmo que, tendo como dados de entrada doi
 echo 'Resultado: ' . verificaDistancia(10, 20, 4, 5);
 
 // 02 - Escreva um algoritmo que leia três números inteiros e positivos(A, B, C) e calcule a seguinte expressão: D = R + S / 2, onde R = (A + B)2 e S = (B + C)2
+// https://www.php.net/manual/pt_BR/function.pow.php
 
 function numerosInteiros($a, $b, $c){
 	$a = $a;
@@ -41,6 +44,7 @@ echo 'Exercício 03 - Faça um algoritmo que leia a idade de uma pessoa expressa
 echo 'Resultado: ' . calculaIdadeEmDias(38,2,25) . ' dias. <hr>';
 
 // 04 - Faça um algoritmo que leia a idade de uma pessoa expressa em dias, e mostre-a expressa em anos, meses e dias.
+// https://www.php.net/manual/pt_BR/function.intdiv.php
 
 function calculaIdadeAnoMesDia($dias){
 	$anos = intdiv($dias, 365);
@@ -69,6 +73,7 @@ echo 'Exercício 05 - Faça um algoritmo que leia as 3 notas de um aluno e calcu
 echo 'Resultado: ' . 'A média ponderada do aluno é: ' . mediaPonderada(8, 7.5, 9) . '<hr>';
 
 // 06 - Faça um algoritmo que leia o tempo de duração de um evento em uma fábrica expressa em segundos e mostre-o expresso em horas, minutos e segundos
+// https://www.php.net/manual/pt_BR/function.fmod.php
 
 function retornaEvento($segundos){
 	$horas = intdiv( $segundos, 3600 );
